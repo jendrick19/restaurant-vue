@@ -11,6 +11,18 @@ import encabezado from "./encabezado.vue"
         components: {
             encabezado
         },
+        methods: {
+         deleteRest(index) {
+            let id = 0;
+            this.restaurants.splice(index,1)
+            this.restaurants.forEach(element => {
+                element.id = id;
+                id++;
+    
+            });
+         }   
+
+        },
         async mounted() {
             let user = localStorage.getItem("user-info")
       
@@ -37,7 +49,6 @@ import encabezado from "./encabezado.vue"
         <h2 class="font-semibold text-[#0f9942] text-4xl text-center mb-7">List of Restaurants</h2>
         <table class="border-solid border-[#16a34a] border-2 text-center w-full">
             <tr class="bg-[#16a34a] text-white">
-                <td class="w-[5%] h-6">Id</td>
                 <td class="w-[10%] h-6">Name</td>
                 <td class="w-[25%] h-6">Contact</td>
                 <td class="w-[20%] h-6">Address</td>
@@ -46,7 +57,6 @@ import encabezado from "./encabezado.vue"
                 <td class="w-[10%] h-6">Action</td>
             </tr>
             <tr v-for="rest in restaurants" :key="rest.id">
-                <td class="w-[5%] h-6">{{ rest.id }}</td>
                 <td class="w-[10%] h-6">{{ rest.name }}</td>
                 <td class="w-[25%] h-6">{{ rest.contact }}</td>
                 <td class="w-[20%] h-6">{{ rest.address }}</td>
@@ -54,8 +64,9 @@ import encabezado from "./encabezado.vue"
                 <td class="w-[5%] h-6">{{ rest.rating }}</td>
                 <td class="w-[10%] h-6">
                     <router-link :to="'/update-Rest/'+rest.id" @click="selectUpdate">
-                        <i class="fa-solid fa-pen-to-square fa-xl" style="color: #000000;"></i>
+                        <i class="fa-solid fa-pen-to-square fa-xl text-black ml-2"></i>
                     </router-link>
+                    <i @click="deleteRest(rest.id)" class="fa-solid fa-trash-can fa-xl text-black ml-2"></i>
                 </td>
             </tr>
         </table>

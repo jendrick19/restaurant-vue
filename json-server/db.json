@@ -4,13 +4,13 @@
       "first_name": "Jendrick ",
       "email": "jendrick@gmail.com",
       "password": "123456",
-      "id": 1
+      "id": 0
     },
     {
       "first_name": "jimerson",
       "email": "jimerson@gmail.com",
       "password": "123456",
-      "id": 2
+      "id": 1
     }
   ],
   "restaurant": [
@@ -20,7 +20,7 @@
       "contact": "0414-888.22.11",
       "rating": 7,
       "featured_dish": "Chicken Burger",
-      "id": 1
+      "id": 0
     },
     {
       "name": "KFC",
@@ -28,7 +28,7 @@
       "contact": "0414-666.22.33",
       "rating": "7",
       "featured_dish": "fried chicken",
-      "id": 2
+      "id": 1
     },
     {
       "name": "Sopas Michu",
@@ -36,7 +36,7 @@
       "contact": "0424-777.11.00",
       "rating": 8,
       "featured_dish": "mondongo",
-      "id": 3
+      "id": 2
     },
     {
       "name": "McDonals",
@@ -44,7 +44,7 @@
       "contact": "0414-546.33.22",
       "featured_dish": "potato fried",
       "rating": 7,
-      "id": 4
+      "id": 3
     },
     {
       "name": "PizzaHud",
@@ -52,7 +52,7 @@
       "contact": "0424-999.22.22",
       "rating": 3,
       "featured_dish": "Margarita Pizza",
-      "id": 5
+      "id": 4
     },
     {
       "name": "Pizza de Verdad",
@@ -60,7 +60,7 @@
       "contact": "0414-888.77.99",
       "rating": 6,
       "featured_dish": "American Pizza",
-      "id": 6
+      "id": 5
     }
   ]
 }
