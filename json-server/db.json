@@ -1,0 +1,66 @@
+{
+  "users": [
+    {
+      "first_name": "Jendrick ",
+      "email": "jendrick@gmail.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "first_name": "jimerson",
+      "email": "jimerson@gmail.com",
+      "password": "123456",
+      "id": 2
+    }
+  ],
+  "restaurant": [
+    {
+      "name": "Burger King",
+      "address": "Av Pedro León",
+      "contact": "0414-888.22.11",
+      "rating": 7,
+      "featured_dish": "Chicken Burger",
+      "id": 1
+    },
+    {
+      "name": "KFC",
+      "address": "Av Libertador",
+      "contact": "0414-666.22.33",
+      "rating": "7",
+      "featured_dish": "fried chicken",
+      "id": 2
+    },
+    {
+      "name": "Sopas Michu",
+      "address": "Av Los Leones",
+      "contact": "0424-777.11.00",
+      "rating": 8,
+      "featured_dish": "mondongo",
+      "id": 3
+    },
+    {
+      "name": "McDonals",
+      "address": "Av Lara",
+      "contact": "0414-546.33.22",
+      "featured_dish": "potato fried",
+      "rating": 7,
+      "id": 4
+    },
+    {
+      "name": "PizzaHud",
+      "address": "Av Rotaria",
+      "contact": "0424-999.22.22",
+      "rating": 3,
+      "featured_dish": "Margarita Pizza",
+      "id": 5
+    },
+    {
+      "name": "Pizza de Verdad",
+      "address": "Av Moran",
+      "contact": "0414-888.77.99",
+      "rating": 6,
+      "featured_dish": "American Pizza",
+      "id": 6
+    }
+  ]
+}
